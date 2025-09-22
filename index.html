@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthik K - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <style>
+    /* Ensures no white gap appears on the side */
+    html {
+      background-color: #0d1117; /* Matches body background */
+    }
+
+    /* Custom Scrollbar Styling */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1a202c;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #4a5568;
+      border-radius: 20px;
+      border: 3px solid #1a202c;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #718096;
+    }
+
+    /* Animations and Hover Effects */
+    .fade-in { animation: fadeIn 0.8s ease-in-out forwards; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
+    .interactive-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .interactive-card:hover { transform: scale(1.05); box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans">
+
+  <header class="fixed top-0 left-0 w-full bg-gray-900 border-b border-gray-700 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+     <div class="flex items-center space-x-4">
+      <div class="text-left">
+        <h1 class="text-2xl font-bold text-purple-400">The Path So Far</h1>
+      </div>
+    </div>
+    <nav class="hidden md:flex space-x-6 text-gray-200 font-medium">
+      <a href="#about" class="hover:text-purple-400">About</a>
+      <a href="#skills" class="hover:text-purple-400">Skills</a>
+      <a href="#experience" class="hover:text-purple-400">Experience</a>
+      <a href="#projects" class="hover:text-purple-400">Projects</a>
+      <a href="#certifications" class="hover:text-purple-400">Certifications</a>
+      <a href="#contact" class="hover:text-purple-400">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <div class="h-20 bg-gray-950"></div>
+
+  <div class="flex flex-col md:flex-row min-h-screen">
+    <aside class="w-full md:w-64 bg-gray-900 p-6 md:fixed md:h-screen md:top-0 md:left-0 md:pt-20 flex flex-col items-center">
+	<h1 class="text-2xl font-bold text-purple-400 mb-4">Karthik K</h1>
+      <img src="assets/profile.jpg" alt="Karthik Profile" class="w-40 h-40 rounded-full border-4 border-purple-400 shadow-lg">
+      <h2 class="text-xl font-semibold">I'm <span id="role" class="text-purple-400"></span></h2>
+      <div class="flex justify-center space-x-4 text-purple-400 my-6">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=karthikk1162@gmail.com" class="hover:text-teal-400"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+919945601328" class="hover:text-teal-400"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://github.com/karthik-k11" target="_blank" class="hover:text-teal-400"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/" target="_blank" class="hover:text-teal-400"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </aside>
+
+    <main class="flex-1 p-6 md:p-10 space-y-12 bg-gray-950 md:ml-64">
+      <section id="about" class="fade-in">
+	
+        <h2 class="text-3xl font-semibold text-purple-400 mb-4 flex items-center gap-2">
+  <i class="fas fa-user"></i> About Me
+</h2>
+
+        <p class="text-gray-200 leading-relaxed">A results-driven MCA postgraduate specializing in Data Science and Machine Learning, with a deep passion for leveraging AI to solve complex problems. My objective is to contribute my expertise to a leading organization, transforming challenging issues into impactful, data-driven technology solutions.</p>
+        <div class="mt-6 flex space-x-4">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=karthikk1162@gmail.com" target="_blank" class="px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg shadow-lg">Hire Me</a>
+          <a href="https://drive.google.com/file/d/1IDThxxeyAehUIpOBG81jfH1cq1FiaSVK/view?usp=sharing" target="_blank" class="px-6 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transition">Resume</a>
+        </div>
+      </section>
+
+      <section id="summary" class="fade-in">
+        <h2 class="text-3xl font-semibold text-purple-400 mb-4 flex items-center gap-2">
+  <i class="fas fa-briefcase"></i> Professional Summary
+</h2>
+        <ul class="list-disc ml-6 text-gray-200 space-y-2 leading-relaxed">
+          <li>MCA postgraduate with a specialization in <b>Data Science</b> and <b>Machine Learning</b>.</li>
+          <li>Proficient in <b>Python</b>, <b>SQL</b>, and modern AI/ML frameworks for end-to-end solution development.</li>
+          <li>Experienced in building <b>ML pipelines</b>, performing data preprocessing, analysis, and visualization.</li>
+          <li>Skilled in applying AI-driven solutions to solve real-world business and technical problems.</li>
+          <li>Hands-on experience with <b>Flask, OpenCV, Scikit-Learn, TensorFlow, and PyTorch</b> for practical ML projects.</li>
+          <li>Strong understanding of <b>database management</b> using SQLite, MySQL, and integrating ML workflows.</li>
+          <li>Adept at collaborative development, working in agile environments, and delivering impactful results.</li>
+          <li>Passionate about leveraging AI/ML expertise to contribute innovative solutions in applied roles.</li>
+        </ul>
+      </section>
+
+      <section id="skills" class="fade-in">
+        <h2 class="text-3xl font-semibold text-purple-400 mb-6 flex items-center gap-2">
+  <i class="fas fa-tools"></i> Skills
+</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-python-plain text-4xl text-yellow-400"></i><span class="mt-2">Python</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-java-plain text-4xl text-red-500"></i><span class="mt-2">Java</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-c-plain text-4xl text-blue-400"></i><span class="mt-2">C</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-django-plain text-4xl text-green-600"></i><span class="mt-2">Django</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-tensorflow-original text-4xl text-orange-400"></i><span class="mt-2">TensorFlow</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-pytorch-original text-4xl text-red-400"></i><span class="mt-2">PyTorch</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="fas fa-robot text-4xl text-teal-400"></i><span class="mt-2">Scikit-Learn</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-numpy-plain-wordmark text-4xl text-purple-400"></i><span class="mt-2">NumPy</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-pandas-plain-wordmark text-4xl text-green-400"></i><span class="mt-2">Pandas</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="fas fa-chart-bar text-4xl text-pink-400"></i><span class="mt-2">Matplotlib</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="fas fa-chart-pie text-4xl text-orange-300"></i><span class="mt-2">Seaborn</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-opencv-plain text-4xl text-blue-500"></i><span class="mt-2">OpenCV</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-mysql-plain text-4xl text-blue-300"></i><span class="mt-2">MySQL</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-sqlite-plain text-4xl text-gray-300"></i><span class="mt-2">SQLite</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-oracle-original text-4xl text-red-600"></i><span class="mt-2">Oracle</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="fas fa-chart-line text-4xl text-indigo-400"></i><span class="mt-2">EDA</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="fas fa-exchange-alt text-4xl text-teal-400"></i><span class="mt-2">ETL</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-docker-plain text-4xl text-blue-400"></i><span class="mt-2">Docker</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-git-plain text-4xl text-orange-500"></i><span class="mt-2">Git</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="fab fa-aws text-4xl text-yellow-400"></i><span class="mt-2">AWS</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="fas fa-paper-plane text-4xl text-orange-400"></i><span class="mt-2">Postman</span></div>
+          <div class="interactive-card bg-gray-800 p-4 rounded flex flex-col items-center"><i class="devicon-vscode-plain text-4xl text-blue-400"></i><span class="mt-2">VS Code</span></div>
+        </div>
+      </section>
+
+      <section id="experience" class="fade-in">
+        <h2 class="text-3xl font-semibold text-purple-400 mb-6 flex items-center gap-2">
+  <i class="fas fa-briefcase"></i> Experience
+</h2>
+        <div class="interactive-card bg-gray-800 p-6 rounded shadow">
+          <h3 class="text-xl font-bold">Data Scientist Intern</h3>
+          <p class="text-gray-400">Analogica Software Development, Bengaluru | 06/2025 – Present</p>
+          <ul class="list-disc ml-6 mt-3 text-gray-200 space-y-2">
+            <li>Cleaned and transformed raw datasets, applying feature engineering techniques that <b>boosted model performance and accuracy.</b></li>
+            <li>Conducted in-depth <b>Exploratory Data Analysis (EDA)</b> using Python, Pandas, Matplotlib, and Seaborn to uncover trends and actionable insights.</li>
+            <li>Designed and optimized <b>end-to-end ML pipelines</b> integrating Python and SQL, improving workflow efficiency and reducing data processing time.</li>
+            <li>Collaborated closely with senior engineers in sprint reviews, brainstorming sessions, and project meetings, contributing valuable technical insights.</li>
+            <li><b>Researched</b> and evaluated emerging AI/ML tools and frameworks, proposing enhancements to strengthen ongoing projects.</li>
+            <li>Built reusable Python scripts for automating repetitive tasks, increasing team productivity.</li>
+            <li>Documented workflows, models, and processes to ensure clarity and ease of handover for future developers.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="fade-in">
+        <h2 class="text-3xl font-semibold text-purple-400 mb-6 flex items-center gap-2">
+  <i class="fas fa-folder-open"></i> Projects
+</h2>
+        <div class="space-y-6">
+          <div class="interactive-card bg-gray-800 p-6 rounded">
+            <h3 class="text-xl font-bold">AI-Driven Library Visitor Log</h3>
+            <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
+              <li>Developed a Flask-based application to automate student registration in libraries.</li>
+              <li>Integrated <b>OCR (Tesseract)</b> with <b>OpenCV</b> to extract Name, Registration Number, and Department from ID cards.</li>
+              <li>Applied regex and pattern-based logic to handle varied ID formats.</li>
+              <li>Stored validated results in <b>SQLite</b> and built a dashboard for recent entries.</li>
+              <li>Reduced manual work by digitizing visitor logging.</li>
+            </ul>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-python-plain"></i> Python</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-flask-original"></i> Flask</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-sqlite-plain"></i> SQLite</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="fas fa-file-alt"></i> OCR</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-opencv-plain"></i> OpenCV</span>
+            </div>
+            <a href="https://github.com/karthik-k11/AI-Driven-Library-Visitor-Log" target="_blank" class="text-teal-400 hover:underline">GitHub Repo</a>
+          </div>
+          <div class="interactive-card bg-gray-800 p-6 rounded">
+            <h3 class="text-xl font-bold">AI-Based Drowsiness Detection System</h3>
+            <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
+              <li>Built a real-time driver monitoring system using <b>Computer Vision (OpenCV)</b> and <b>Deep Learning</b>.</li>
+              <li>Implemented facial landmark detection to track eye aspect ratio and blinking frequency.</li>
+              <li>Triggered audio alerts when drowsiness was detected to prevent accidents.</li>
+              <li>Designed for deployment on low-cost devices for practical use cases.</li>
+            </ul>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-python-plain"></i> Python</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-opencv-plain"></i> OpenCV</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="fas fa-brain"></i> Deep Learning</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="fas fa-eye"></i> Computer Vision</span>
+            </div>
+            <a href="https://github.com/karthik-k11/Drowsiness-Detection-System" target="_blank" class="text-teal-400 hover:underline">GitHub Repo</a>
+          </div>
+          <div class="interactive-card bg-gray-800 p-6 rounded">
+            <h3 class="text-xl font-bold">Happiness Index Prediction (Live App)</h3>
+            <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
+              <li>Developed a <b>Linear Regression model</b> to predict happiness scores based on income.</li>
+              <li>Built the pipeline with <b>Scikit-Learn</b> and evaluated performance using regression metrics.</li>
+              <li>Deployed the model as a live web app on <b>Render</b> for real-time predictions.</li>
+              <li>Demonstrated end-to-end ML deployment from training to production hosting.</li>
+            </ul>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-python-plain"></i> Python</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-scikit-learn-plain"></i> Scikit-Learn</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="fas fa-chart-line"></i> Linear Regression</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="fas fa-cloud"></i> Render</span>
+            </div>
+            <a href="https://github.com/karthik-k11/Happiness-Index" target="_blank" class="text-teal-400 hover:underline">GitHub Repo</a> | 
+            <a href="https://happiness-index-vyrk.onrender.com/" target="_blank" class="text-pink-400 hover:underline">Live App</a>
+          </div>
+          <div class="interactive-card bg-gray-800 p-6 rounded">
+            <h3 class="text-xl font-bold">Superstore Sales Analysis (EDA)</h3>
+            <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
+              <li>Performed EDA on Superstore dataset to uncover actionable business insights.</li>
+              <li>Analyzed profitability by regions, categories, and customer segments.</li>
+              <li>Identified loss-making categories and optimized discount strategies.</li>
+              <li>Built KPI dashboards using <b>Pandas, Matplotlib, Seaborn</b> for decision-making support.</li>
+            </ul>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-python-plain"></i> Python</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-pandas-original"></i> Pandas</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-seaborn-original"></i> Seaborn</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-matplotlib-plain"></i> Matplotlib</span>
+            </div>
+            <a href="https://github.com/karthik-k11/Machine-Learning/blob/main/EDA/SuperStore%20EDA.ipynb" target="_blank" class="text-teal-400 hover:underline">GitHub Repo</a>
+          </div>
+          <div class="interactive-card bg-gray-800 p-6 rounded">
+            <h3 class="text-xl font-bold">Car Price Analysis (EDA)</h3>
+            <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
+              <li>Analyzed Indian used car dataset across Coimbatore, Kolkata, and Jaipur.</li>
+              <li>Studied factors influencing resale prices (year, km driven, fuel type, engine, power).</li>
+              <li>Handled missing data with imputation techniques.</li>
+              <li>Uncovered <b>geographical pricing trends</b> and resale patterns.</li>
+            </ul>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-python-plain"></i> Python</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-pandas-original"></i> Pandas</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-seaborn-original"></i> Seaborn</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-matplotlib-plain"></i> Matplotlib</span>
+            </div>
+            <a href="https://github.com/karthik-k11/Machine-Learning/blob/main/EDA/car_EDA.ipynb" target="_blank" class="text-teal-400 hover:underline">GitHub Repo</a>
+          </div>
+          <div class="interactive-card bg-gray-800 p-6 rounded">
+            <h3 class="text-xl font-bold">Machine Learning Models & Algorithms</h3>
+            <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
+              <li>Implemented ML algorithms using <b>Scikit-Learn</b> including:
+                <ul class="list-disc ml-6 text-gray-200 space-y-1">
+                  <li>Simple, Multiple & Polynomial Regression</li>
+                  <li>Lasso & Ridge Regression</li>
+                  <li>Logistic Regression</li>
+                  <li>KNN & K-Means Clustering</li>
+                </ul>
+              </li>
+              <li>Applied <b>Pandas, NumPy, Matplotlib, Seaborn</b> for preprocessing and visualization.</li>
+              <li>Strengthened understanding of supervised & unsupervised ML methods.</li>
+            </ul>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-python-plain"></i> Python</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-scikit-learn-plain"></i> Scikit-Learn</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-pandas-original"></i> Pandas</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-seaborn-original"></i> Seaborn</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-matplotlib-plain"></i> Matplotlib</span>
+              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-numpy-original"></i> NumPy</span>
+            </div>
+            <a href="https://github.com/karthik-k11/Machine-Learning" target="_blank" class="text-teal-400 hover:underline">GitHub Repo</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="fade-in">
+  <h2 class="text-3xl font-semibold text-purple-400 mb-6 flex items-center gap-2">
+    <i class="fas fa-graduation-cap text-purple-400"></i> Education
+  </h2>
+  <ul class="space-y-2 text-gray-200">
+    <li><b>MCA</b> – KLESNC, Bengaluru (2023 – Pursuing) | CGPA: 8</li>
+    <li><b>BCA</b> – Mangalore University (2020 – 2023) | CGPA: 7.9</li>
+  </ul>
+</section>
+
+
+      <section id="certifications" class="fade-in">
+  <h2 class="text-3xl font-semibold text-purple-400 mb-6 flex items-center gap-2">
+  <i class="fas fa-book"></i> Certifications
+</h2>
+
+
+  <div class="space-y-4">
+
+    <!-- Python for Data Science -->
+    <div class="interactive-card flex justify-between items-center bg-gray-800 p-4 rounded">
+      <div class="flex items-center space-x-3">
+        <i class="devicon-python-plain colored text-2xl"></i>
+
+        <div>
+          <p class="font-semibold text-gray-200">Python for Data Science (14-Days Workshop)</p>
+          <p class="text-gray-400 text-sm">Certisured</p>
+        </div>
+      </div>
+      <span class="text-gray-400 text-sm">Mar 2025</span>
+    </div>
+
+    <!-- Machine Learning -->
+    <div class="interactive-card flex justify-between items-center bg-gray-800 p-4 rounded">
+      <div class="flex items-center space-x-3">
+        <i class="fas fa-brain text-blue-400 text-xl"></i>
+
+        <div>
+          <p class="font-semibold text-gray-200">Machine Learning</p>
+          <p class="text-gray-400 text-sm">IBM</p>
+        </div>
+      </div>
+      <span class="text-gray-400 text-sm">Dec 2024</span>
+      
+    </div>
+
+    <!-- Java -->
+    <div class="interactive-card flex justify-between items-center bg-gray-800 p-4 rounded">
+      <div class="flex items-center space-x-3">
+        <i class="devicon-java-plain colored text-red-500 text-xl"></i>
+        <div>
+          <p class="font-semibold text-gray-200">Certified Java Programmer</p>
+          <p class="text-gray-400 text-sm">NPTEL</p>
+        </div>
+      </div>
+      <span class="text-gray-400 text-sm">Jul – Oct 2024</span>
+    </div>
+
+    <!-- Accenture -->
+    <div class="interactive-card flex justify-between items-center bg-gray-800 p-4 rounded">
+      <div class="flex items-center space-x-3">
+        <i class="fas fa-chart-line text-green-400 text-xl"></i>
+        <div>
+          <p class="font-semibold text-gray-200">Data Analytics & Visualization</p>
+          <p class="text-gray-400 text-sm">Accenture</p>
+        </div>
+      </div>
+      <span class="text-gray-400 text-sm">Oct 2024</span>
+    </div>
+
+  </div>
+</section>
+
+
+      <section id="honors" class="fade-in mt-10">
+  <h2 class="text-3xl font-semibold text-purple-400 mb-6 flex items-center gap-2">
+  <i class="fas fa-award"></i> Honors & Awards
+</h2>
+  <div class="space-y-4">
+
+    <div class="interactive-card bg-gray-800 p-4 rounded flex items-start space-x-3">
+      <i class="fas fa-trophy text-yellow-400 text-2xl"></i>
+      <div>
+        <p class="font-semibold text-gray-200">Best Boy of College</p>
+        <p class="text-gray-400 text-sm">Recognized for leadership, active involvement in campus events, and contributions to overall student development.</p>
+      </div>
+    </div>
+
+    <div class="interactive-card bg-gray-800 p-4 rounded flex items-start space-x-3">
+      <i class="fas fa-medal text-green-400 text-2xl"></i>
+      <div>
+        <p class="font-semibold text-gray-200">Best Boy of MCA</p>
+        <p class="text-gray-400 text-sm">Awarded for outstanding academic performance, consistent attendance, and active participation in co-curricular activities.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+      <section id="contact" class="fade-in">
+        <h2 class="text-3xl font-semibold text-purple-400 mb-6 flex items-center gap-2">
+  <i class="fas fa-envelope"></i> Contact Me
+</h2>
+        <form id="contact-form" class="space-y-4">
+          <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 rounded bg-gray-700 text-white">
+          <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 rounded bg-gray-700 text-white">
+          <textarea name="message" placeholder="Your Message" required class="w-full p-2 rounded bg-gray-700 text-white"></textarea>
+          <button type="submit" class="px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg shadow-lg">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer class="bg-gray-800 text-center p-4 text-gray-400">
+    <p>&copy; 2025 Karthik K. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const roles = ["a Data Scientist", " an AI Enthusiast"];
+    let roleIndex = 0, charIndex = 0;
+    const roleElement = document.getElementById("role");
+
+    function typeRole() {
+      if (charIndex < roles[roleIndex].length) {
+        roleElement.textContent += roles[roleIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeRole, 100);
+      } else { setTimeout(deleteRole, 1500); }
+    }
+
+    function deleteRole() {
+      if (charIndex > 0) {
+        roleElement.textContent = roleElement.textContent.slice(0, -1);
+        charIndex--;
+        setTimeout(deleteRole, 50);
+      } else {
+        roleIndex = (roleIndex + 1) % roles.length;
+        setTimeout(typeRole, 500);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", typeRole);
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("sk70qdTmKJLP0FJZv"); 
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      emailjs.sendForm('service_zg63ogq', 'template_q3uxke9', this)
+        .then(function () {
+          alert("Message sent successfully!");
+          document.getElementById("contact-form").reset(); // Reset form after sending
+        }, function (error) {
+          alert("Failed to send the message. Please try again.");
+          console.error('EmailJS error:', error);
+        });
+    });
+  </script>
+
+</body>
+</html>
