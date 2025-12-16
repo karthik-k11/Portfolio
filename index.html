@@ -150,120 +150,86 @@
         </div>
       </section>
 
-      <section id="projects" class="fade-in">
-        <h2 class="text-3xl font-semibold text-purple-400 mb-6 flex items-center gap-2">
-  <i class="fas fa-folder-open"></i> Projects
-</h2>
-        <div class="space-y-6">
-          <div class="interactive-card bg-gray-800 p-6 rounded">
-            <h3 class="text-xl font-bold">AI-Driven Library Visitor Log</h3>
-            <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
-              <li>Developed a Flask-based application to automate student registration in libraries.</li>
-              <li>Integrated <b>OCR (Tesseract)</b> with <b>OpenCV</b> to extract Name, Registration Number, and Department from ID cards.</li>
-              <li>Applied regex and pattern-based logic to handle varied ID formats.</li>
-              <li>Stored validated results in <b>SQLite</b> and built a dashboard for recent entries.</li>
-              <li>Reduced manual work by digitizing visitor logging.</li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-python-plain"></i> Python</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-flask-original"></i> Flask</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-sqlite-plain"></i> SQLite</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="fas fa-file-alt"></i> OCR</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-opencv-plain"></i> OpenCV</span>
-            </div>
-            <a href="https://github.com/karthik-k11/AI-Driven-Library-Visitor-Log" target="_blank" class="text-teal-400 hover:underline">GitHub Repo</a>
-          </div>
-          <div class="interactive-card bg-gray-800 p-6 rounded">
-            <h3 class="text-xl font-bold">AI-Based Drowsiness Detection System</h3>
-            <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
-              <li>Built a real-time driver monitoring system using <b>Computer Vision (OpenCV)</b> and <b>Deep Learning</b>.</li>
-              <li>Implemented facial landmark detection to track eye aspect ratio and blinking frequency.</li>
-              <li>Triggered audio alerts when drowsiness was detected to prevent accidents.</li>
-              <li>Designed for deployment on low-cost devices for practical use cases.</li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-python-plain"></i> Python</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-opencv-plain"></i> OpenCV</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="fas fa-brain"></i> Deep Learning</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="fas fa-eye"></i> Computer Vision</span>
-            </div>
-            <a href="https://github.com/karthik-k11/Drowsiness-Detection-System" target="_blank" class="text-teal-400 hover:underline">GitHub Repo</a>
-          </div>
-          <div class="interactive-card bg-gray-800 p-6 rounded">
-            <h3 class="text-xl font-bold">Happiness Index Prediction (Live App)</h3>
-            <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
-              <li>Developed a <b>Linear Regression model</b> to predict happiness scores based on income.</li>
-              <li>Built the pipeline with <b>Scikit-Learn</b> and evaluated performance using regression metrics.</li>
-              <li>Deployed the model as a live web app on <b>Render</b> for real-time predictions.</li>
-              <li>Demonstrated end-to-end ML deployment from training to production hosting.</li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-python-plain"></i> Python</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-scikit-learn-plain"></i> Scikit-Learn</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="fas fa-chart-line"></i> Linear Regression</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="fas fa-cloud"></i> Render</span>
-            </div>
-            <a href="https://github.com/karthik-k11/Happiness-Index" target="_blank" class="text-teal-400 hover:underline">GitHub Repo</a> | 
-            <a href="https://happiness-index-vyrk.onrender.com/" target="_blank" class="text-pink-400 hover:underline">Live App</a>
-          </div>
-          <div class="interactive-card bg-gray-800 p-6 rounded">
-            <h3 class="text-xl font-bold">Superstore Sales Analysis (EDA)</h3>
-            <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
-              <li>Performed EDA on Superstore dataset to uncover actionable business insights.</li>
-              <li>Analyzed profitability by regions, categories, and customer segments.</li>
-              <li>Identified loss-making categories and optimized discount strategies.</li>
-              <li>Built KPI dashboards using <b>Pandas, Matplotlib, Seaborn</b> for decision-making support.</li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-python-plain"></i> Python</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-pandas-original"></i> Pandas</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-seaborn-original"></i> Seaborn</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-matplotlib-plain"></i> Matplotlib</span>
-            </div>
-            <a href="https://github.com/karthik-k11/Machine-Learning/blob/main/EDA/SuperStore%20EDA.ipynb" target="_blank" class="text-teal-400 hover:underline">GitHub Repo</a>
-          </div>
-          <div class="interactive-card bg-gray-800 p-6 rounded">
-            <h3 class="text-xl font-bold">Car Price Analysis (EDA)</h3>
-            <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
-              <li>Analyzed Indian used car dataset across Coimbatore, Kolkata, and Jaipur.</li>
-              <li>Studied factors influencing resale prices (year, km driven, fuel type, engine, power).</li>
-              <li>Handled missing data with imputation techniques.</li>
-              <li>Uncovered <b>geographical pricing trends</b> and resale patterns.</li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-python-plain"></i> Python</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-pandas-original"></i> Pandas</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-seaborn-original"></i> Seaborn</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-matplotlib-plain"></i> Matplotlib</span>
-            </div>
-            <a href="https://github.com/karthik-k11/Machine-Learning/blob/main/EDA/car_EDA.ipynb" target="_blank" class="text-teal-400 hover:underline">GitHub Repo</a>
-          </div>
-          <div class="interactive-card bg-gray-800 p-6 rounded">
-            <h3 class="text-xl font-bold">Machine Learning Models & Algorithms</h3>
-            <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
-              <li>Implemented ML algorithms using <b>Scikit-Learn</b> including:
-                <ul class="list-disc ml-6 text-gray-200 space-y-1">
-                  <li>Simple, Multiple & Polynomial Regression</li>
-                  <li>Lasso & Ridge Regression</li>
-                  <li>Logistic Regression</li>
-                  <li>KNN & K-Means Clustering</li>
-                </ul>
-              </li>
-              <li>Applied <b>Pandas, NumPy, Matplotlib, Seaborn</b> for preprocessing and visualization.</li>
-              <li>Strengthened understanding of supervised & unsupervised ML methods.</li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-python-plain"></i> Python</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-scikit-learn-plain"></i> Scikit-Learn</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-pandas-original"></i> Pandas</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-seaborn-original"></i> Seaborn</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-matplotlib-plain"></i> Matplotlib</span>
-              <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1"><i class="devicon-numpy-original"></i> NumPy</span>
-            </div>
-            <a href="https://github.com/karthik-k11/Machine-Learning" target="_blank" class="text-teal-400 hover:underline">GitHub Repo</a>
-          </div>
-        </div>
-      </section>
+     <section id="projects" class="fade-in">
+  <h2 class="text-3xl font-semibold text-purple-400 mb-6 flex items-center gap-2">
+    <i class="fas fa-folder-open"></i> Projects
+  </h2>
+
+  <div class="space-y-6">
+
+    <!-- Gemini RAG Brain -->
+    <div class="interactive-card bg-gray-800 p-6 rounded">
+      <h3 class="text-xl font-bold">Gemini RAG Brain – Conversational Knowledge Engine</h3>
+      <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
+        <li>Built a <b>Retrieval-Augmented Generation (RAG)</b> system enabling users to chat with uploaded PDF and TXT documents.</li>
+        <li>Implemented <b>semantic vector search</b> using HuggingFace embeddings (<i>all-MiniLM-L6-v2</i>) and <b>ChromaDB</b>.</li>
+        <li>Integrated <b>Google Gemini 2.5 Flash</b> for accurate, context-aware responses with fallback model support.</li>
+        <li>Added <b>source citation</b> for every answer, showing exact document chunks used.</li>
+        <li>Ensured <b>privacy-friendly processing</b> using temporary storage and session-based memory.</li>
+      </ul>
+
+      <div class="mt-3 flex flex-wrap gap-2">
+        <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1">
+          <i class="devicon-python-plain"></i> Python
+        </span>
+        <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1">
+          <i class="fas fa-brain"></i> LangChain
+        </span>
+        <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1">
+          <i class="fas fa-robot"></i> Gemini
+        </span>
+        <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1">
+          <i class="fas fa-database"></i> ChromaDB
+        </span>
+        <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1">
+          <i class="fas fa-stream"></i> Streamlit
+        </span>
+      </div>
+
+      <a href="https://github.com/karthik-k11/RAG-Chatbot-Project.git"
+         target="_blank"
+         class="text-teal-400 hover:underline mt-2 inline-block">
+        GitHub Repository
+      </a>
+    </div>
+
+    <!-- Civic Helper -->
+    <div class="interactive-card bg-gray-800 p-6 rounded">
+      <h3 class="text-xl font-bold">Civic-Helper – Multi-Agent A2A System for Social Good</h3>
+      <ul class="list-disc ml-6 text-gray-200 space-y-2 mt-2">
+        <li>Designed a <b>multi-agent AI system</b> that helps citizens report civic issues through a simple conversational interface.</li>
+        <li>Implemented an <b>Agent-to-Agent (A2A)</b> architecture separating user interaction and formal letter drafting.</li>
+        <li>Used <b>Google Agent Development Kit (ADK)</b> to orchestrate Advocate and Drafter agents with session memory.</li>
+        <li>Automated professional letter generation and simulated email dispatch to correct government departments.</li>
+        <li>Validated system quality using a custom <b>LLM-as-a-Judge evaluation framework</b>.</li>
+      </ul>
+
+      <div class="mt-3 flex flex-wrap gap-2">
+        <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1">
+          <i class="devicon-python-plain"></i> Python
+        </span>
+        <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1">
+          <i class="fas fa-project-diagram"></i> Multi-Agent System
+        </span>
+        <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1">
+          <i class="fas fa-robot"></i> Gemini 2.5
+        </span>
+        <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1">
+          <i class="fas fa-comments"></i> Gradio
+        </span>
+        <span class="px-3 py-1 text-xs bg-gray-700 rounded flex items-center gap-1">
+          <i class="fas fa-network-wired"></i> A2A Protocol
+        </span>
+      </div>
+
+      <span class="text-gray-400 text-sm mt-2 inline-block">
+        Flagship Project – Google AI Agents Intensive Capstone
+      </span>
+    </div>
+
+  </div>
+</section>
+
 
       <section id="education" class="fade-in">
   <h2 class="text-3xl font-semibold text-purple-400 mb-6 flex items-center gap-2">
